@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BDB5A6A1B5713720038CBC7 /* NSData_LAMCompressionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB5A691B5713720038CBC7 /* NSData_LAMCompressionTests.m */; };
+		9BDB5A7B1B5713B90038CBC7 /* TestData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A761B5713B90038CBC7 /* TestData.txt */; };
+		9BDB5A7C1B5713B90038CBC7 /* TestData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A761B5713B90038CBC7 /* TestData.txt */; };
+		9BDB5A7D1B5713B90038CBC7 /* TestData.lz4 in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A771B5713B90038CBC7 /* TestData.lz4 */; };
+		9BDB5A7E1B5713B90038CBC7 /* TestData.lz4 in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A771B5713B90038CBC7 /* TestData.lz4 */; };
+		9BDB5A7F1B5713B90038CBC7 /* TestData.zlib in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A781B5713B90038CBC7 /* TestData.zlib */; };
+		9BDB5A801B5713B90038CBC7 /* TestData.zlib in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A781B5713B90038CBC7 /* TestData.zlib */; };
+		9BDB5A811B5713B90038CBC7 /* TestData.lzma in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A791B5713B90038CBC7 /* TestData.lzma */; };
+		9BDB5A821B5713B90038CBC7 /* TestData.lzma in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A791B5713B90038CBC7 /* TestData.lzma */; };
+		9BDB5A831B5713B90038CBC7 /* TestData.lzfse in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A7A1B5713B90038CBC7 /* TestData.lzfse */; };
+		9BDB5A841B5713B90038CBC7 /* TestData.lzfse in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A7A1B5713B90038CBC7 /* TestData.lzfse */; };
+		9BDB5A861B5713DC0038CBC7 /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDB5A851B5713DC0038CBC7 /* libcompression.tbd */; };
+		9BDB5A891B57159C0038CBC7 /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDB5A851B5713DC0038CBC7 /* libcompression.tbd */; };
+		9BDB5A921B57211E0038CBC7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A8D1B57211E0038CBC7 /* Info.plist */; };
+		9BDB5A931B57211E0038CBC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB5A8E1B57211E0038CBC7 /* main.m */; };
+		9BDB5A941B57211E0038CBC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB5A8E1B57211E0038CBC7 /* main.m */; };
+		9BDB5A971B5721290038CBC7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A951B5721290038CBC7 /* MainMenu.xib */; };
+		9BDB5A981B5721290038CBC7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A951B5721290038CBC7 /* MainMenu.xib */; };
+		9BDB5A9B1B5721EC0038CBC7 /* NSData+LAMCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB5A9A1B5721EC0038CBC7 /* NSData+LAMCompression.m */; };
+		9BDB5A9C1B5721EC0038CBC7 /* NSData+LAMCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB5A9A1B5721EC0038CBC7 /* NSData+LAMCompression.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BDB5A6C1B5713720038CBC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BDB5A461B57135F0038CBC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BDB5A4D1B57135F0038CBC7;
+			remoteInfo = "NSData+LAMCompression";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9BDB5A4E1B57135F0038CBC7 /* NSData+LAMCompression.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSData+LAMCompression.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BDB5A671B5713720038CBC7 /* NSData+LAMCompressionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSData+LAMCompressionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BDB5A691B5713720038CBC7 /* NSData_LAMCompressionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSData_LAMCompressionTests.m; sourceTree = "<group>"; };
+		9BDB5A6B1B5713720038CBC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BDB5A761B5713B90038CBC7 /* TestData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestData.txt; sourceTree = "<group>"; };
+		9BDB5A771B5713B90038CBC7 /* TestData.lz4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestData.lz4; sourceTree = "<group>"; };
+		9BDB5A781B5713B90038CBC7 /* TestData.zlib */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestData.zlib; sourceTree = "<group>"; };
+		9BDB5A791B5713B90038CBC7 /* TestData.lzma */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestData.lzma; sourceTree = "<group>"; };
+		9BDB5A7A1B5713B90038CBC7 /* TestData.lzfse */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestData.lzfse; sourceTree = "<group>"; };
+		9BDB5A851B5713DC0038CBC7 /* libcompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcompression.tbd; path = usr/lib/libcompression.tbd; sourceTree = SDKROOT; };
+		9BDB5A8D1B57211E0038CBC7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "NSData+LAMCompressionTests/Dummy App/Info.plist"; sourceTree = SOURCE_ROOT; };
+		9BDB5A8E1B57211E0038CBC7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "NSData+LAMCompressionTests/Dummy App/main.m"; sourceTree = SOURCE_ROOT; };
+		9BDB5A961B5721290038CBC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "NSData+LAMCompressionTests/Dummy App/Base.lproj/MainMenu.xib"; sourceTree = SOURCE_ROOT; };
+		9BDB5A991B5721EC0038CBC7 /* NSData+LAMCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+LAMCompression.h"; path = "NSData+LAMCompression/NSData+LAMCompression.h"; sourceTree = "<group>"; };
+		9BDB5A9A1B5721EC0038CBC7 /* NSData+LAMCompression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+LAMCompression.m"; path = "NSData+LAMCompression/NSData+LAMCompression.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BDB5A4B1B57135F0038CBC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDB5A861B5713DC0038CBC7 /* libcompression.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BDB5A641B5713720038CBC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDB5A891B57159C0038CBC7 /* libcompression.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BDB5A451B57135F0038CBC7 = {
+			isa = PBXGroup;
+			children = (
+				9BDB5A621B5713660038CBC7 /* NSData+LAMCompression */,
+				9BDB5A681B5713720038CBC7 /* NSData+LAMCompressionTests */,
+				9BDB5A4F1B57135F0038CBC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BDB5A4F1B57135F0038CBC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BDB5A4E1B57135F0038CBC7 /* NSData+LAMCompression.app */,
+				9BDB5A671B5713720038CBC7 /* NSData+LAMCompressionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BDB5A501B57135F0038CBC7 /* Dummy App */ = {
+			isa = PBXGroup;
+			children = (
+				9BDB5A8E1B57211E0038CBC7 /* main.m */,
+				9BDB5A951B5721290038CBC7 /* MainMenu.xib */,
+				9BDB5A8D1B57211E0038CBC7 /* Info.plist */,
+			);
+			name = "Dummy App";
+			path = "../NSData+LAMCompression";
+			sourceTree = "<group>";
+		};
+		9BDB5A621B5713660038CBC7 /* NSData+LAMCompression */ = {
+			isa = PBXGroup;
+			children = (
+				9BDB5A991B5721EC0038CBC7 /* NSData+LAMCompression.h */,
+				9BDB5A9A1B5721EC0038CBC7 /* NSData+LAMCompression.m */,
+				9BDB5A871B5713EB0038CBC7 /* Frameworks */,
+			);
+			name = "NSData+LAMCompression";
+			sourceTree = "<group>";
+		};
+		9BDB5A681B5713720038CBC7 /* NSData+LAMCompressionTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BDB5A691B5713720038CBC7 /* NSData_LAMCompressionTests.m */,
+				9BDB5A751B5713A80038CBC7 /* TestData */,
+				9BDB5A741B57139E0038CBC7 /* Supporting Files */,
+			);
+			path = "NSData+LAMCompressionTests";
+			sourceTree = "<group>";
+		};
+		9BDB5A741B57139E0038CBC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BDB5A501B57135F0038CBC7 /* Dummy App */,
+				9BDB5A6B1B5713720038CBC7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BDB5A751B5713A80038CBC7 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				9BDB5A761B5713B90038CBC7 /* TestData.txt */,
+				9BDB5A771B5713B90038CBC7 /* TestData.lz4 */,
+				9BDB5A781B5713B90038CBC7 /* TestData.zlib */,
+				9BDB5A791B5713B90038CBC7 /* TestData.lzma */,
+				9BDB5A7A1B5713B90038CBC7 /* TestData.lzfse */,
+			);
+			name = TestData;
+			sourceTree = "<group>";
+		};
+		9BDB5A871B5713EB0038CBC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BDB5A851B5713DC0038CBC7 /* libcompression.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BDB5A4D1B57135F0038CBC7 /* NSData+LAMCompression */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BDB5A5F1B57135F0038CBC7 /* Build configuration list for PBXNativeTarget "NSData+LAMCompression" */;
+			buildPhases = (
+				9BDB5A4A1B57135F0038CBC7 /* Sources */,
+				9BDB5A4B1B57135F0038CBC7 /* Frameworks */,
+				9BDB5A4C1B57135F0038CBC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSData+LAMCompression";
+			productName = "NSData+LAMCompression";
+			productReference = 9BDB5A4E1B57135F0038CBC7 /* NSData+LAMCompression.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BDB5A661B5713720038CBC7 /* NSData+LAMCompressionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BDB5A6E1B5713720038CBC7 /* Build configuration list for PBXNativeTarget "NSData+LAMCompressionTests" */;
+			buildPhases = (
+				9BDB5A631B5713720038CBC7 /* Sources */,
+				9BDB5A641B5713720038CBC7 /* Frameworks */,
+				9BDB5A651B5713720038CBC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BDB5A6D1B5713720038CBC7 /* PBXTargetDependency */,
+			);
+			name = "NSData+LAMCompressionTests";
+			productName = "NSData+LAMCompressionTests";
+			productReference = 9BDB5A671B5713720038CBC7 /* NSData+LAMCompressionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BDB5A461B57135F0038CBC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Lee Morgan";
+				TargetAttributes = {
+					9BDB5A4D1B57135F0038CBC7 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					9BDB5A661B5713720038CBC7 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 9BDB5A4D1B57135F0038CBC7;
+					};
+				};
+			};
+			buildConfigurationList = 9BDB5A491B57135F0038CBC7 /* Build configuration list for PBXProject "NSData+LAMCompression" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BDB5A451B57135F0038CBC7;
+			productRefGroup = 9BDB5A4F1B57135F0038CBC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BDB5A4D1B57135F0038CBC7 /* NSData+LAMCompression */,
+				9BDB5A661B5713720038CBC7 /* NSData+LAMCompressionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BDB5A4C1B57135F0038CBC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDB5A811B5713B90038CBC7 /* TestData.lzma in Resources */,
+				9BDB5A7D1B5713B90038CBC7 /* TestData.lz4 in Resources */,
+				9BDB5A7F1B5713B90038CBC7 /* TestData.zlib in Resources */,
+				9BDB5A831B5713B90038CBC7 /* TestData.lzfse in Resources */,
+				9BDB5A7B1B5713B90038CBC7 /* TestData.txt in Resources */,
+				9BDB5A971B5721290038CBC7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BDB5A651B5713720038CBC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDB5A7E1B5713B90038CBC7 /* TestData.lz4 in Resources */,
+				9BDB5A821B5713B90038CBC7 /* TestData.lzma in Resources */,
+				9BDB5A801B5713B90038CBC7 /* TestData.zlib in Resources */,
+				9BDB5A841B5713B90038CBC7 /* TestData.lzfse in Resources */,
+				9BDB5A7C1B5713B90038CBC7 /* TestData.txt in Resources */,
+				9BDB5A981B5721290038CBC7 /* MainMenu.xib in Resources */,
+				9BDB5A921B57211E0038CBC7 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BDB5A4A1B57135F0038CBC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDB5A9B1B5721EC0038CBC7 /* NSData+LAMCompression.m in Sources */,
+				9BDB5A931B57211E0038CBC7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BDB5A631B5713720038CBC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDB5A941B57211E0038CBC7 /* main.m in Sources */,
+				9BDB5A6A1B5713720038CBC7 /* NSData_LAMCompressionTests.m in Sources */,
+				9BDB5A9C1B5721EC0038CBC7 /* NSData+LAMCompression.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BDB5A6D1B5713720038CBC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BDB5A4D1B57135F0038CBC7 /* NSData+LAMCompression */;
+			targetProxy = 9BDB5A6C1B5713720038CBC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BDB5A951B5721290038CBC7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BDB5A961B5721290038CBC7 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BDB5A5D1B57135F0038CBC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9BDB5A5E1B57135F0038CBC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9BDB5A601B57135F0038CBC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "NSData+LAMCompressionTests/Dummy App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "leemorgan.NSData-LAMCompression";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9BDB5A611B57135F0038CBC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "NSData+LAMCompressionTests/Dummy App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "leemorgan.NSData-LAMCompression";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9BDB5A6F1B5713720038CBC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "NSData+LAMCompressionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "leemorgan.NSData-LAMCompressionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSData+LAMCompression.app/Contents/MacOS/NSData+LAMCompression";
+			};
+			name = Debug;
+		};
+		9BDB5A701B5713720038CBC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "NSData+LAMCompressionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "leemorgan.NSData-LAMCompressionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSData+LAMCompression.app/Contents/MacOS/NSData+LAMCompression";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BDB5A491B57135F0038CBC7 /* Build configuration list for PBXProject "NSData+LAMCompression" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BDB5A5D1B57135F0038CBC7 /* Debug */,
+				9BDB5A5E1B57135F0038CBC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BDB5A5F1B57135F0038CBC7 /* Build configuration list for PBXNativeTarget "NSData+LAMCompression" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BDB5A601B57135F0038CBC7 /* Debug */,
+				9BDB5A611B57135F0038CBC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BDB5A6E1B5713720038CBC7 /* Build configuration list for PBXNativeTarget "NSData+LAMCompressionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BDB5A6F1B5713720038CBC7 /* Debug */,
+				9BDB5A701B5713720038CBC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BDB5A461B57135F0038CBC7 /* Project object */;
+}
