@@ -2,6 +2,7 @@ Purpose
 =====
 LAMCompression is a category on NSData that provides data compression and decompression functionality by wrapping CompressionLib, a new library available on OS 10.11 and iOS 9.0
 
+LAMCompression is written in Objective-C. For the Swift version see [Compression](https://github.com/leemorgan/NSData-Compression).
 
 Installation
 =====
@@ -39,6 +40,8 @@ Background Information
 [Tinkering with CompressionLib](http://blog.shiftybit.net/tinkering-with-compressionlib/)
 
 [Tinkering with CompressionLib (Part 2)](http://blog.shiftybit.net/tinkering-with-compressionlib-part-2)
+
+[Tinkering with CompressionLib (Part 3)](http://blog.shiftybit.net/tinkering-with-compressionlib-part-3)
 
 By [Lee Morgan](http://shiftybit.net). If you find this useful please let me know. I'm [@leemorgan](https://twitter.com/leemorgan) on twitter.
 
