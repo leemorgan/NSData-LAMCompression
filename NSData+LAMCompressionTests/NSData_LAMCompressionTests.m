@@ -23,6 +23,86 @@
 	[super tearDown];
 }
 
+/// lam_dataWithContentsOfArchive
+- (void)test_lam_dataWithContentsOfArchive {
+	
+	NSData *verifiedData = [self testDataOfType:@"txt"];
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"TestData" ofType:@"lzfse"];
+	NSAssert(path != nil, @"Failed to get test data path");
+	
+	
+	// Test with good path
+	NSData *uncompressedData = [NSData lam_dataWithContentsOfArchive:path];
+	XCTAssertTrue([uncompressedData isEqualToData:verifiedData]);
+	
+	// Test invalid path
+	NSData *nilUncompressedData = [NSData lam_dataWithContentsOfArchive:nil];
+	XCTAssertNil(nilUncompressedData);
+}
+
+/// lam_dataWithContentsOfArchvie:compression: tests
+- (void)test_lam_dataWithContentsOfArchvie_compression {
+	
+	NSData *verifiedData = [self testDataOfType:@"txt"];
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"TestData" ofType:@"lzfse"];
+	NSAssert(path != nil, @"Failed to get test data path");
+	
+	
+	// Test with good path and compression
+	NSData *uncompressedData = [NSData lam_dataWithContentsOfArchive:path usedCompression:LAMCompressionLZFSE];
+	XCTAssertTrue([uncompressedData isEqualToData:verifiedData]);
+	
+	// Test wrong compression algorithm
+	NSData *uncompressedData2 = [NSData lam_dataWithContentsOfArchive:path usedCompression:LAMCompressionLZ4];
+	XCTAssertNil(uncompressedData2);
+	
+	// Test invalid compression algorithm
+	XCTAssertThrows([NSData lam_dataWithContentsOfArchive:path usedCompression:42]);
+	
+	// Test invalid path
+	NSData *nilUncompressedData = [NSData lam_dataWithContentsOfArchive:nil usedCompression:LAMCompressionLZFSE];
+	XCTAssertNil(nilUncompressedData);
+}
+
+/// lam_initWithContentsOfArchive tests
+- (void)test_lam_initWithContentsOfArchive {
+	
+	NSData *verifiedData = [self testDataOfType:@"txt"];
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"TestData" ofType:@"lzfse"];
+	NSAssert(path != nil, @"Failed to get test data path");
+	
+	
+	// Test with good path
+	NSData *uncompressedData = [[NSData alloc] lam_initWithContentsOfArchive:path];
+	XCTAssertTrue([uncompressedData isEqualToData:verifiedData]);
+	
+	// Test invalid path
+	NSData *nilUncompressedData = [[NSData alloc] lam_initWithContentsOfArchive:nil];
+	XCTAssertNil(nilUncompressedData);
+}
+
+/// lam_initWithContentsOfArchive_compression tests
+- (void)test_lam_initWithContentsOfArchive_compression {
+	
+	NSData *verifiedData = [self testDataOfType:@"txt"];
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"TestData" ofType:@"lzfse"];
+	
+	// Test with good path and compression
+	NSData *uncompressedData = [[NSData alloc] lam_initWithContentsOfArchive:path compression:LAMCompressionLZFSE];
+	XCTAssertTrue([uncompressedData isEqualToData:verifiedData]);
+	
+	// Test invalid compression algorithm
+	NSData *uncompressedData2 = [[NSData alloc] lam_initWithContentsOfArchive:path compression:LAMCompressionLZ4];
+	XCTAssertNil(uncompressedData2);
+	
+	// Test invalid compression algorithm
+	XCTAssertThrows([[NSData alloc] lam_initWithContentsOfArchive:path compression:42]);
+	
+	// Test invalid path
+	NSData *nilUncompressedData = [[NSData alloc] lam_initWithContentsOfArchive:nil compression:LAMCompressionLZFSE];
+	XCTAssertNil(nilUncompressedData);
+}
+
 /// lam_uncompressedDataUsingCompression tests
 - (void)test_uncompressedDataUsingCompression {
 	

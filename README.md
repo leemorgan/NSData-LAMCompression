@@ -19,6 +19,26 @@ Returns a NSData object created by compressing the receiver using the given comp
     - (NSData *)lam_uncompressedDataUsingCompression:(LAMCompression)compression;
 Returns a NSData object by uncompressing the receiver using the given compression algorithm
 
+<br>
+
+    + (NSData *)lam_dataWithContentsOfArchive:(NSString *)path;
+Creates and returns a NSData object by decompressing the data from the file specified by path. Attempts to determine the appropriate decompression algorithm using the path's extension.
+
+<br>
+
+    + (NSData *)lam_dataWithContentsOfArchive:(NSString *)path usedCompression:(LAMCompression)compression;
+Creates and returns a NSData object by decompressing the data from the file specified by path using the given compression algorithm.
+
+<br>
+
+    - (NSData *)lam_initWithContentsOfArchive:(NSString *)path;
+Returns a NSData object initialized by decompressing the data from the file specified by path. Attempts to determine the appropriate decompression algorithm using the path's extension.
+
+<br>
+
+    - (NSData *)lam_initWithContentsOfArchive:(NSString *)path compression:(LAMCompression)compression;
+Returns a NSData object initialized by decompressing the data from the file specified by path using the given compression algorithm.
+
 
 Documentation
 =====

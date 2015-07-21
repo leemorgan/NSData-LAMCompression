@@ -25,6 +25,60 @@ typedef NS_ENUM(NSUInteger, LAMCompressionOperation) {
 // Public methods
 //--------------------
 
++ (NSData *)lam_dataWithContentsOfArchive:(NSString *)path {
+	return [[NSData alloc] lam_initWithContentsOfArchive:path];
+}
+
++ (NSData *)lam_dataWithContentsOfArchive:(NSString *)path usedCompression:(LAMCompression)compression {
+	return [[NSData alloc] lam_initWithContentsOfArchive:path compression:compression];
+}
+
+- (NSData *)lam_initWithContentsOfArchive:(NSString *)path {
+	
+	NSData *compressedData = [NSData dataWithContentsOfFile:path];
+	
+	if (compressedData == nil) {
+		return nil;
+	}
+	
+	NSString *ext = [[path pathExtension] lowercaseString];
+	
+	LAMCompression compression;
+	if ([ext isEqualToString:@"lz4"]) {
+		compression = LAMCompressionLZ4;
+	}
+	else if ([ext isEqualToString:@"zlib"]) {
+		compression = LAMCompressionZLIB;
+	}
+	else if ([ext isEqualToString:@"lzma"]) {
+		compression = LAMCompressionLZMA;
+	}
+	else if ([ext isEqualToString:@"lzfse"]) {
+		compression = LAMCompressionLZFSE;
+	}
+	else {
+		return nil;
+	}
+	
+	return [compressedData lam_uncompressedDataUsingCompression:compression];
+}
+
+- (NSData *)lam_initWithContentsOfArchive:(NSString *)path compression:(LAMCompression)compression {
+	
+	NSAssert(compression == LAMCompressionLZ4  ||
+			 compression == LAMCompressionZLIB ||
+			 compression == LAMCompressionLZMA ||
+			 compression == LAMCompressionLZFSE, @"Invalid compression type specified");
+	
+	NSData *compressedData = [NSData dataWithContentsOfFile:path];
+	
+	if (compressedData == nil) {
+		return nil;
+	}
+	
+	return [compressedData lam_uncompressedDataUsingCompression:compression];
+}
+
 - (NSData *)lam_compressedDataUsingCompression:(LAMCompression)compression {
 	return [self lam_dataUsingCompression:compression operation:LAMCompressionEncode];
 }
