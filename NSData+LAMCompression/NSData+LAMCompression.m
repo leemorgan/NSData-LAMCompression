@@ -197,6 +197,7 @@ typedef NS_ENUM(NSUInteger, LAMCompressionOperation) {
 	} while (status == COMPRESSION_STATUS_OK);
 	
 	compression_stream_destroy(&stream);
+	free(dstBuffer);
 	
 	return [outputData copy];
 }
