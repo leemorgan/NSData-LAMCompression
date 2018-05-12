@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F361F7620A6E263009A3EE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F361F7520A6E263009A3EE4 /* main.m */; };
+		3F361F8120A6E298009A3EE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F361F8020A6E298009A3EE4 /* main.m */; };
+		3F361F8520A6E40C009A3EE4 /* NSData+LAMCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB5A9A1B5721EC0038CBC7 /* NSData+LAMCompression.m */; };
+		3F361F8620A6E40C009A3EE4 /* NSData+LAMCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB5A9A1B5721EC0038CBC7 /* NSData+LAMCompression.m */; };
 		9BDB5A6A1B5713720038CBC7 /* NSData_LAMCompressionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB5A691B5713720038CBC7 /* NSData_LAMCompressionTests.m */; };
 		9BDB5A7B1B5713B90038CBC7 /* TestData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A761B5713B90038CBC7 /* TestData.txt */; };
 		9BDB5A7C1B5713B90038CBC7 /* TestData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB5A761B5713B90038CBC7 /* TestData.txt */; };
@@ -39,7 +43,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3F361F7120A6E262009A3EE4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		3F361F7C20A6E297009A3EE4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3F361F7320A6E262009A3EE4 /* lamCompress */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lamCompress; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F361F7520A6E263009A3EE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F361F7E20A6E297009A3EE4 /* lamUnconpress */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lamUnconpress; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F361F8020A6E298009A3EE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9BDB5A4E1B57135F0038CBC7 /* NSData+LAMCompression.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSData+LAMCompression.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BDB5A671B5713720038CBC7 /* NSData+LAMCompressionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSData+LAMCompressionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BDB5A691B5713720038CBC7 /* NSData_LAMCompressionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSData_LAMCompressionTests.m; sourceTree = "<group>"; };
@@ -58,6 +87,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3F361F7020A6E262009A3EE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F361F7B20A6E297009A3EE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BDB5A4B1B57135F0038CBC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,11 +120,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F361F7420A6E263009A3EE4 /* lamCompress */ = {
+			isa = PBXGroup;
+			children = (
+				3F361F7520A6E263009A3EE4 /* main.m */,
+			);
+			path = lamCompress;
+			sourceTree = "<group>";
+		};
+		3F361F7F20A6E298009A3EE4 /* lamUnconpress */ = {
+			isa = PBXGroup;
+			children = (
+				3F361F8020A6E298009A3EE4 /* main.m */,
+			);
+			path = lamUnconpress;
+			sourceTree = "<group>";
+		};
 		9BDB5A451B57135F0038CBC7 = {
 			isa = PBXGroup;
 			children = (
 				9BDB5A621B5713660038CBC7 /* NSData+LAMCompression */,
 				9BDB5A681B5713720038CBC7 /* NSData+LAMCompressionTests */,
+				3F361F7420A6E263009A3EE4 /* lamCompress */,
+				3F361F7F20A6E298009A3EE4 /* lamUnconpress */,
 				9BDB5A4F1B57135F0038CBC7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +152,8 @@
 			children = (
 				9BDB5A4E1B57135F0038CBC7 /* NSData+LAMCompression.app */,
 				9BDB5A671B5713720038CBC7 /* NSData+LAMCompressionTests.xctest */,
+				3F361F7320A6E262009A3EE4 /* lamCompress */,
+				3F361F7E20A6E297009A3EE4 /* lamUnconpress */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +221,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3F361F7220A6E262009A3EE4 /* lamCompress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F361F7920A6E263009A3EE4 /* Build configuration list for PBXNativeTarget "lamCompress" */;
+			buildPhases = (
+				3F361F6F20A6E262009A3EE4 /* Sources */,
+				3F361F7020A6E262009A3EE4 /* Frameworks */,
+				3F361F7120A6E262009A3EE4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lamCompress;
+			productName = lamCompress;
+			productReference = 3F361F7320A6E262009A3EE4 /* lamCompress */;
+			productType = "com.apple.product-type.tool";
+		};
+		3F361F7D20A6E297009A3EE4 /* lamUnconpress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F361F8220A6E298009A3EE4 /* Build configuration list for PBXNativeTarget "lamUnconpress" */;
+			buildPhases = (
+				3F361F7A20A6E297009A3EE4 /* Sources */,
+				3F361F7B20A6E297009A3EE4 /* Frameworks */,
+				3F361F7C20A6E297009A3EE4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lamUnconpress;
+			productName = lamUnconpress;
+			productReference = 3F361F7E20A6E297009A3EE4 /* lamUnconpress */;
+			productType = "com.apple.product-type.tool";
+		};
 		9BDB5A4D1B57135F0038CBC7 /* NSData+LAMCompression */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BDB5A5F1B57135F0038CBC7 /* Build configuration list for PBXNativeTarget "NSData+LAMCompression" */;
@@ -202,6 +299,14 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Lee Morgan";
 				TargetAttributes = {
+					3F361F7220A6E262009A3EE4 = {
+						CreatedOnToolsVersion = 9.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					3F361F7D20A6E297009A3EE4 = {
+						CreatedOnToolsVersion = 9.3.1;
+						ProvisioningStyle = Automatic;
+					};
 					9BDB5A4D1B57135F0038CBC7 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -226,6 +331,8 @@
 			targets = (
 				9BDB5A4D1B57135F0038CBC7 /* NSData+LAMCompression */,
 				9BDB5A661B5713720038CBC7 /* NSData+LAMCompressionTests */,
+				3F361F7220A6E262009A3EE4 /* lamCompress */,
+				3F361F7D20A6E297009A3EE4 /* lamUnconpress */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +368,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3F361F6F20A6E262009A3EE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F361F8620A6E40C009A3EE4 /* NSData+LAMCompression.m in Sources */,
+				3F361F7620A6E263009A3EE4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F361F7A20A6E297009A3EE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F361F8520A6E40C009A3EE4 /* NSData+LAMCompression.m in Sources */,
+				3F361F8120A6E298009A3EE4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BDB5A4A1B57135F0038CBC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,6 +427,110 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3F361F7720A6E263009A3EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F361F7820A6E263009A3EE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F361F8320A6E298009A3EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F361F8420A6E298009A3EE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		9BDB5A5D1B57135F0038CBC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -432,6 +661,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F361F7920A6E263009A3EE4 /* Build configuration list for PBXNativeTarget "lamCompress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F361F7720A6E263009A3EE4 /* Debug */,
+				3F361F7820A6E263009A3EE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F361F8220A6E298009A3EE4 /* Build configuration list for PBXNativeTarget "lamUnconpress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F361F8320A6E298009A3EE4 /* Debug */,
+				3F361F8420A6E298009A3EE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9BDB5A491B57135F0038CBC7 /* Build configuration list for PBXProject "NSData+LAMCompression" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
